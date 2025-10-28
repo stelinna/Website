@@ -1,0 +1,168 @@
+       /* ========================================
+   COMMENT SECTION STYLES ONLY
+   Add this to your existing CSS file
+   ======================================== */
+
+/* ========================================
+   COMMENT SECTION STYLES
+   ======================================== */
+
+/* Comment Section Container */
+.comments-section {
+    width: 60%;
+    max-width: 500px;
+    margin: 2rem 0 2rem 1rem;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.comments-section > h2 {
+    color: var(--text-color);
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Comment Form */
+.comment-form {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.comment-form .form-group {
+    margin-bottom: 1.2rem;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: brown;
+    font-size: 0.9rem;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 85%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    background: white;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+    outline: none;
+    border-color: brown;
+}
+
+.comment-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.publish-btn {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #f2312abc 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.publish-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Comments Container */
+.comments-container {
+    padding: 2rem;
+}
+
+.comments-container > h3 {
+    font-size: 1.3rem;
+    color: brown;
+    margin-bottom: 1rem;
+    padding-bottom: 0.50rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.comments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* =============================
+   CHAT BUBBLE STYLE (Option A)
+   ============================= */
+.comments-list > li {
+    position: relative;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 18px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    max-width: 85%;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Alternate Left/Right Alignment */
+.comments-list > li:nth-child(odd) {
+    margin-left: auto;
+    background: #ffe4dc;
+}
+
+.comments-list > li:nth-child(even) {
+    margin-right: auto;
+    background: #f1f1f1;
+}
+
+/* Bubble Tails */
+.comments-list > li:nth-child(odd)::after,
+.comments-list > li:nth-child(even)::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+}
+
+.comments-list > li:nth-child(odd)::after {
+    right: 12px;
+    border-top-color: #ffe4dc;
+}
+
+.comments-list > li:nth-child(even)::after {
+    left: 12px;
+    border-top-color: #f1f1f1;
+}
+
+/* Responsive */
+@media (max-width: 740px) {
+    .comments-section {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .comment-form,
+    .comments-container {
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .publish-btn {
+        width: 50%;
+    }
+}

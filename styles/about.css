@@ -1,0 +1,131 @@
+.section-title {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* space between text and lines */
+    
+}
+
+.section-title::before,
+.section-title::after {
+    content: '';
+    flex: 1;
+    height: 5px;
+    background: brown;
+    transform: scaleX(0);
+    transform-origin: center;
+    animation: drawLine 5s forwards;
+}
+
+.section-title::before {
+    animation-delay: 0.2s; /* optional delay for left line */
+}
+
+.section-title::after {
+    animation-delay: 0.4s; /* optional delay for right line */
+}
+
+@keyframes drawLine {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+/* Sections */
+section {
+    padding: 30px 0;
+    background-color: var(--light-color);
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.about-img {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.about-img img {
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 75%;
+    box-shadow: 0 8px 20px rgb(40, 8, 8);
+    transition: all 0.5s ease;
+    border: 2px solid white;
+}
+
+.about-img img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+.about-img::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-img {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto 30px auto;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+    }
+
+    .about-text h2 {
+        font-size: 24px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-img {
+        width: 200px;
+        height: 200px;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    font-size:16px;
+}

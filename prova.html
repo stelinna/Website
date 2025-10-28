@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Font Recommendations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Source+Serif+Pro:wght@300;400;600&family=Lora:wght@400;500;600&family=Roboto+Slab:wght@300;400;500&family=Open+Sans:wght@300;400;500&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid #e0e6ed;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .font-category {
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background: #f8f9fa;
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+        }
+        
+        .font-sample {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .font-sample:hover {
+            transform: translateY(-5px);
+        }
+        
+        .sample-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .font-name {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .font-type {
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        
+        .sample-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+        
+        .font-info {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        
+        /* Font styles */
+        .merriweather {
+            font-family: 'Merriweather', serif;
+        }
+        
+        .source-serif {
+            font-family: 'Source Serif Pro', serif;
+        }
+        
+        .lora {
+            font-family: 'Lora', serif;
+        }
+        
+        .roboto-slab {
+            font-family: 'Roboto Slab', serif;
+        }
+        
+        .open-sans {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .pt-serif {
+            font-family: 'PT Serif', serif;
+        }
+        
+        .recommendation {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 5px solid #2196f3;
+        }
+        
+        .recommendation h3 {
+            color: #0d47a1;
+            margin-bottom: 1rem;
+        }
+        
+        .recommendation p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .usage-tips {
+            background: #fff8e1;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 5px solid #ffb300;
+        }
+        
+        .usage-tips h3 {
+            color: #e65100;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e6ed;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .sample-title {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .font-type {
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Choosing the Right Font for Articles</h1>
+            <p class="subtitle">A guide to selecting the perfect typography for your content</p>
+        </header>
+        
+        <div class="recommendation">
+            <h3>Professional Recommendation</h3>
+            <p>For long-form articles, <strong>serif fonts</strong> are generally preferred as they guide the eye along lines of text and improve readability.</p>
+            <p>For online articles, <strong>sans-serif fonts</strong> can work well too, especially with proper spacing and sizing.</p>
+        </div>
+        
+        <div class="font-category">
+            <h2 class="category-title">Serif Fonts (Traditional & Formal)</h2>
+            
+            <div class="font-sample merriweather">
+                <div class="sample-title">
+                    <span class="font-name">Merriweather</span>
+                    <span class="font-type">Serif</span>
+                </div>
+                <p class="sample-text">The artist's latest collection represents a profound exploration of color and form. Each piece tells a story of transformation, inviting viewers to see the world through a different lens. The exhibition will run from June through August at the Metropolitan Gallery.</p>
+                <p class="font-info">Excellent readability, great for long articles</p>
+            </div>
+            
+            <div class="font-sample source-serif">
+                <div class="sample-title">
+                    <span class="font-name">Source Serif Pro</span>
+                    <span class="font-type">Serif</span>
+                </div>
+                <p class="sample-text">The artist's latest collection represents a profound exploration of color and form. Each piece tells a story of transformation, inviting viewers to see the world through a different lens. The exhibition will run from June through August at the Metropolitan Gallery.</p>
+                <p class="font-info">Designed specifically for readability on screens</p>
+            </div>
+            
+            <div class="font-sample pt-serif">
+                <div class="sample-title">
+                    <span class="font-name">PT Serif</span>
+                    <span class="font-type">Serif</span>
+                </div>
+                <p class="sample-text">The artist's latest collection represents a profound exploration of color and form. Each piece tells a story of transformation, inviting viewers to see the world through a different lens. The exhibition will run from June through August at the Metropolitan Gallery.</p>
+                <p class="font-info">Well-balanced, great for both print and web</p>
+            </div>
+        </div>
+        
+        <div class="font-category">
+            <h2 class="category-title">Sans-Serif Fonts (Modern & Clean)</h2>
+            
+            <div class="font-sample open-sans">
+                <div class="sample-title">
+                    <span class="font-name">Open Sans</span>
+                    <span class="font-type">Sans-Serif</span>
+                </div>
+                <p class="sample-text">The artist's latest collection represents a profound exploration of color and form. Each piece tells a story of transformation, inviting viewers to see the world through a different lens. The exhibition will run from June through August at the Metropolitan Gallery.</p>
+                <p class="font-info">Neutral and friendly, works well for web articles</p>
+            </div>
+        </div>
+        
+        <div class="font-category">
+            <h2 class="category-title">Versatile Fonts (Good for Both Print & Web)</h2>
+            
+            <div class="font-sample lora">
+                <div class="sample-title">
+                    <span class="font-name">Lora</span>
+                    <span class="font-type">Serif</span>
+                </div>
+                <p class="sample-text">The artist's latest collection represents a profound exploration of color and form. Each piece tells a story of transformation, inviting viewers to see the world through a different lens. The exhibition will run from June through August at the Metropolitan Gallery.</p>
+                <p class="font-info">Elegant yet readable, perfect for artistic content</p>
+            </div>
+            
+            <div class="font-sample roboto-slab">
+                <div class="sample-title">
+                    <span class="font-name">Roboto Slab</span>
+                    <span class="font-type">Slab Serif</span>
+                </div>
+                <p class="sample-text">The artist's latest collection represents a profound exploration of color and form. Each piece tells a story of transformation, inviting viewers to see the world through a different lens. The exhibition will run from June through August at the Metropolitan Gallery.</p>
+                <p class="font-info">Modern yet highly readable</p>
+            </div>
+        </div>
+        
+        <div class="usage-tips">
+            <h3>Typography Best Practices for Articles</h3>
+            <p>• Use 16-20px font size for body text on websites</p>
+            <p>• Maintain line height of 1.5-1.8 for readability</p>
+            <p>• Limit line length to 50-75 characters</p>
+            <p>• Ensure good contrast between text and background</p>
+            <p>• Use larger sizes for headings with a clear hierarchy</p>
+        </div>
+        
+        <footer>
+            <p>Created for article typography guidance | Designed for readability</p>
+        </footer>
+    </div>
+</body>
+</html>

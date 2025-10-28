@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist's Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Source+Serif+Pro:wght@300;400;600&family=Lora:wght@400;500;600&family=Roboto+Slab:wght@300;400;500&family=Open+Sans:wght@300;400;500&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <!-- Header -->
+<header id="header">
+    <div class="container header-container">
+        <a href="#" class="logo"><span class="artist">ARTIST'S </span>
+            <span class="Portfolio"> Portfolio</span></a>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="header-nav" id="header-nav">
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#portfolio" class="dropbtn">Portfolio</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#portfolio" data-filter="drawing">Drawing</a></li>
+                        <li><a href="#portfolio" data-filter="painting">Painting</a></li>
+                        <li><a href="#portfolio" data-filter="photography">Photography</a></li>
+                        <li><a href="#portfolio" data-filter="digital art">Digital Art</a></li>
+                        <li><a href="#portfolio" data-filter="ai art">AI Art</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>  
+ <!-- Portfolio Section --> 
+<section id="portfolio" class="portfolio">
+    <div class="portfolio-grid">
+        <!-- Article 1 -->
+        <div class="portfolio-item" data-category="painting">
+            <div class="article-container">
+                <a href="articles/urban-dreams.html" class="portfolio-link">
+                    <div class="article-image-container">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=745&q=80" alt="Abstract Painting">
+                        <span class="article-category">Painting</span>
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Urban Dreams</h3>
+                        <p class="article-description">A vibrant abstract piece exploring the energy of city life through color and form. Acrylic on canvas, 2022.</p>
+                        <span class="article-link">View Article <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Article 2 -->
+        <div class="portfolio-item" data-category="digital art">
+            <div class="article-container">
+                <a href="#" class="portfolio-link">
+                    <div class="article-image-container">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=658&q=80" alt="Digital Art">
+                        <span class="article-category">Digital Art</span>
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Digital Harmony</h3>
+                        <p class="article-description">Exploring the balance between technology and nature in this digital creation from 2023.</p>
+                        <span class="article-link">View Article <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Article 3 -->
+        <div class="portfolio-item" data-category="drawing">
+            <div class="article-container">
+                <a href="#" class="portfolio-link">
+                    <div class="article-image-container">
+                        <img src="https://images.unsplash.com/photo-1590005354167-6da97870c757?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=661&q=80" alt="Sculpture">
+                        <span class="article-category">Drawing</span>
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Form & Void</h3>
+                        <p class="article-description">A clay sculpture exploring positive and negative space, created in 2021.</p>
+                        <span class="article-link">View Article <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Article 4 -->
+        <div class="portfolio-item" data-category="photography">
+            <div class="article-container">
+                <a href="#" class="portfolio-link">
+                    <div class="article-image-container">
+                        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="Photography">
+                        <span class="article-category">Photography</span>
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Urban Patterns</h3>
+                        <p class="article-description">Capturing the repetitive geometries found in city architecture through digital photography.</p>
+                        <span class="article-link">View Article <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Article 5 -->
+        <div class="portfolio-item" data-category="painting">
+            <div class="article-container">
+                <a href="#" class="portfolio-link">
+                    <div class="article-image-container">
+                        <img src="https://images.unsplash.com/photo-1515405295579-ba7b45403062?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Watercolor Painting">
+                        <span class="article-category">Painting</span>
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Coastal Memories</h3>
+                        <p class="article-description">A watercolor piece capturing the essence of seaside landscapes, painted in 2020.</p>
+                        <span class="article-link">View Article <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Article 6 -->
+        <div class="portfolio-item" data-category="digital art">
+            <div class="article-container">
+                <a href="#" class="portfolio-link">
+                    <div class="article-image-container">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" alt="Digital Art">
+                        <span class="article-category">Digital Art</span>
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Neon Dreams</h3>
+                        <p class="article-description">A vibrant digital creation exploring cyberpunk aesthetics and neon-lit environments.</p>
+                        <span class="article-link">View Article <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>    
+    <!-- Pagination container -->
+    <div class="pagination-container"></div>
+</section> 
+
+    <!-- The rest of your HTML remains unchanged -->
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Artist's Portfolio</h2>
+            
+            <div class="about-content">
+                <div class="about-img">
+                <a href="#portfolio"><img src="photos\artport.png"></a>
+                </div>
+                
+                <div class="about-text">
+                    <h2>Hello, I'm Artist's Portfolio</h2>
+                    <p>This space was created to celebrate creativity and provide artists with the tools, ideas, and inspiration they need to grow. What started as a passion for sharing art has become a platform where creativity meets guidance.</p>
+                    <p>Here, you'll discover curated recommendations for art supplies, practical tips for improving your skills, and inspiring ideas drawn from artists across the world. Each post is designed to spark your imagination, fuel your creativity, and help you feel confident in your artistic journey.</p>
+                    <p>Whether you're sketching for fun, exploring new techniques, or building your portfolio, Artists Portfolio is here to guide and inspire you every step of the way. Together, let's discover, create, and grow.<p>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+      <!-- Floating social icons -->
+<div class="floating-social">
+    <a href="https://www.pinterest.com/artistsportfolio/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-pinterest"></i>
+    </a>
+    <a href="https://www.instagram.com/artistsportfolio/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/artistsportfolio" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://facebook.com/artistsportfolio" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://linkedin.com/in/artistsportfolio" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+</div>
+  <!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Talk About Art</h3>
+                
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> thisisartistsportfolio@gmail.com</p>
+                </div>
+                
+                <p>Feel free to reach out for collaborations, promotions, or any creative opportunities.</p>
+                
+                <div class="social-links">
+                    <a href="https://www.pinterest.com/artistsportfolio/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                    <a href="https://www.instagram.com/artistsportfolio/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/artistsportfolio" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://facebook.com/artistsportfolio" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/artistsportfolio" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Contact form moved outside contact-info to be a sibling -->
+            <div class="contact-form">
+                <form id="contactForm" class="form-visible">
+                    <!-- FormSubmit configuration -->
+                    <input type="hidden" name="_subject" value="New message from your portfolio!">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="text" name="_honey" style="display:none">
+                    
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Success Message Tab -->
+    <div id="successMessage">
+        <button class="close-btn" id="closeMessage">&times;</button>
+        <p><i class="fas fa-check-circle"></i> Thank you! Your message has been sent.</p>
+    </div>
+
+ <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-top">
+            <a href="#" class="footer-logo">
+                <span class="art">ARTIST'S</span>
+                <span class="portf">Portfolio</span>
+            </a>
+            
+            <nav class="footer-nav">
+                <ul class="footer-links">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Social Icons Section -->
+        <div class="footer-social">
+            <a href="https://www.pinterest.com/artistsportfolio/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-pinterest"></i>
+            </a>
+            <a href="https://www.instagram.com/artistsportfolio/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/artistsportfolio" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://facebook.com/artistsportfolio" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://linkedin.com/in/artistsportfolio" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Artist's Portfolio. All rights reserved.</p>
+        </div>
+    </div>
+ </footer> 
+   <!-- At the end of your body tag -->
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

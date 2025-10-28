@@ -1,0 +1,282 @@
+/* ============================= */
+/* Portfolio Section             */
+/* ============================= */
+.portfolio {
+    padding-top: 100px;
+    padding-left: 50px;   /* space on left */
+    padding-right: 50px;  /* space on right */
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Ensure portfolio items are hidden by default */
+.portfolio-item {
+    display: none !important;
+}
+
+/* Only show items when JavaScript adds the display:block */
+.portfolio-item[style*="display: block"] {
+    display: block !important;
+}
+
+/* Portfolio Filters */
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    margin: 5px;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;   /* max width for content */
+    margin: 0 auto;      /* center the grid */
+    width: 100%;
+}
+
+/* Simple Portfolio Items Animation */
+.portfolio-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(246, 244, 244, 0.7);
+    position: relative;
+    cursor: pointer;
+    height: auto;
+    
+    /* Simple smooth transitions */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+    
+    /* Initial state for animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: simpleFadeIn 0.6s ease forwards;
+}
+
+/* Simple staggered animation delays */
+.portfolio-item:nth-child(1) { animation-delay: 0s; }
+.portfolio-item:nth-child(2) { animation-delay: 0.1s; }
+.portfolio-item:nth-child(3) { animation-delay: 0.2s; }
+.portfolio-item:nth-child(4) { animation-delay: 0.3s; }
+.portfolio-item:nth-child(5) { animation-delay: 0.4s; }
+.portfolio-item:nth-child(6) { animation-delay: 0.5s; }
+
+/* Simple hover effects */
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Portfolio Link Clickable */
+.portfolio-link {
+    display: block;
+    position: relative;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Simple Article Container */
+.article-container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Simple Image Section */
+.article-image-container {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.article-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .article-image-container img {
+    transform: scale(1.05);
+}
+
+/* Simple Category Badge */
+.article-category {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #fff;
+    background: rgba(146, 142, 142, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Article Content */
+.article-content {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background: #fdfdfd;
+    max-height: 130px;
+    overflow: hidden;
+}
+
+.article-title {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.article-description {
+    font-family: 'Merriweather', serif;
+    color: #555;
+    flex-grow: 0;
+    margin: 0;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    font-size: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Simple Article Link */
+.article-link {
+    font-family: 'Merriweather', serif;
+    display: inline-flex;
+    align-items: center;
+    color: brown;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: auto;
+    text-decoration: none;
+}
+
+.article-link i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.article-link:hover i {
+    transform: translateX(3px);
+}
+
+/* Simple Animation Keyframes */
+@keyframes simpleFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .portfolio {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 400px;
+    }
+    
+    .portfolio-item:hover {
+        transform: translateY(-3px);
+    }
+    
+    .article-image-container {
+        height: 240px;
+    }
+    
+    .article-content {
+        max-height: 160px;
+        padding: 16px 18px;
+    }
+    
+    .article-title {
+        font-size: 1rem;
+    }
+    
+    .article-description {
+        font-size: 11px;
+        line-height: 1.4;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+    }
+    
+    .article-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-grid {
+        max-width: 320px;
+    }
+    
+    .portfolio-item:hover {
+        transform: translateY(-3px);
+    }
+    
+    .article-image-container {
+        height: 260px;
+    }
+    
+    .article-content {
+        max-height: 140px;
+        padding: 14px 16px;
+    }
+    
+    .article-title {
+        font-size: 0.95rem;
+    }
+    
+    .article-description {
+        font-size: 9px;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+    }
+    
+    .article-link {
+        font-size: 11px;
+    }
+}
