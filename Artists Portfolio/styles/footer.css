@@ -1,0 +1,210 @@
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, var(--primary-color) 0%);
+    color: var(--light-color);
+    padding: 2rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+/* Logo Styles */
+.footer-logo {
+    text-align: left;
+   /* font-size: 3rem;*/
+    font-weight: normal;
+    text-decoration: none;
+    color: var(--light-color);
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 0.3rem;
+    line-height: 1.1; 
+    justify-content: start;
+    align-items: baseline; 
+    margin-left: -5px; 
+    transition: transform 0.3s ease;
+    
+}
+.footer-logo .art {
+    font-family: 'Chromate';  /* replace with any font you want */
+    font-size:2.5rem;
+}
+.footer-logo .portf {
+     font-family:'Baumans';
+    font-weight: 400;  
+    font-size:2rem;
+    position: relative;
+    top: 0.5rem; 
+}
+
+.footer-logo:hover {
+    transform: scale(1.05);
+}
+
+.artist {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.portfolio {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #bbbbbb;
+    letter-spacing: 2px;
+}
+
+/* Navigation Styles */
+.footer-nav {
+    width: 100%;
+    max-width: 400px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li a {
+    color: #d8d8d8;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.footer-links li a:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-links li a:hover::after {
+    width: 70%;
+}
+/* Social Icons Styles */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem; /* spacing above copyright line */
+}
+
+.footer-social a {
+    color: #d8d8d8;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+/* Copyright Styles */
+.copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #aaaaaa;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+
+
+/* Responsive Design */
+@media (min-width: 796px) {
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer-logo {
+        margin-bottom: 0;
+    }
+    
+    .footer-nav {
+        width: auto;
+    }
+    
+    .footer-links {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .artist, .portfolio {
+        font-size: 1.8rem;
+    }
+     .footer-social {
+        gap: 1rem;            /* smaller gaps */
+        margin-bottom: 1rem;  /* tighter spacing */
+    }
+
+    .footer-social a {
+        font-size: 1.2rem;    /* slightly smaller icons */
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+}
