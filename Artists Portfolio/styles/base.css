@@ -1,0 +1,91 @@
+/* base.css - Variables, Reset, Global Styles */
+
+:root {
+    --primary-color: #343131;    /* Dark Black for main text & headings */
+    --accent-color: #222222;     /* Slightly lighter black for hover/highlights */
+    --light-color: #fdfdfd;      /* Off-white background */
+    --dark-color: #343131;       /* Pure black for deep accents */
+    --highlight-color: #666666;  /* Medium gray for minor accents */
+    --text-color: #111111;       /* Main body text */
+    --transition: all 0.3s ease;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    padding: 20px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: brown;
+    color: var(--light-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background:#343131;
+    color: #fdfdfd;   
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Section Titles */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: brown;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 3px;
+    background: brown;
+    margin: 15px auto;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}

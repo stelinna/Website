@@ -1,0 +1,86 @@
+/* utilities.css - Responsive Design & Utility Classes */
+
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+                top: 70px;
+                right: 0;
+                width: 150px;
+                background: white;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: stretch;
+                transition: all 0.3s ease;
+                z-index: 1000;
+                box-shadow: -5px 5px 15px rgba(196, 43, 43, 0.1);
+                border-radius: 4px 0 0 4px;
+                max-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transform: translateX(100%);
+                padding: 0;
+    }
+    
+    .nav-links.active {
+        max-height: 300px;
+        opacity: 1;
+        transform: translateX(0);
+        padding: 5px 0;
+    }
+    
+    .nav-links li {
+        width: 100%;
+    }
+    .nav-links a {
+                font-size: 1rem;
+                padding: 10px 10px;
+                display: block;
+                width: 100%;
+                text-align: center;
+                border-radius: 0;
+            }
+    .hamburger {
+        display: block;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-btn {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+}
